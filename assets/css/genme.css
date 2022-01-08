@@ -1,0 +1,175 @@
+::placeholder {
+    text - align: center
+}*{
+    margin: 0,
+    padding: 0
+}: root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(106, 163, 137);
+    --colorShadeB: rgb(121, 186, 156);
+    --colorShadeC: rgb(150, 232, 195);
+    --colorShadeD: rgb(187, 232, 211);
+    --colorShadeE: rgb(205, 255, 232)
+}.textInput {
+    width: 87 % ;padding: 15 px;margin: 10 px;font - size: 20 px;font - weight: 500;line - height: 1.25;color: #464a4c;background-color:# fff;background - image: none;background - clip: padding - box;border: 1 px solid rgba(0, 0, 0, .15);border - radius: 10 px;outline: 0
+}
+a {
+    text - decoration: none!important
+}
+@keyframes spin {
+    0 % {
+        transform: rotate(0)
+    }
+    100 % {
+        transform: rotate(360 deg)
+    }
+}
+td {
+    text - align: center
+}.theader {
+    background - color: #e43f6f;
+    color: #fff;
+    font - size: 1.5 em;
+    padding: 1 rem;
+    text - align: center;
+    text - transform: uppercase
+}.table - users {
+    border: 1 px solid #327a81;border-radius:10px;box-shadow:3px 3px 0 rgba(0,0,0,.1);max-width:calc(100% - 2em);margin:1em auto;overflow:hidden;width:100%}table{width:100%}table td,table th{color:# 2 b686e;padding: 10 px
+}
+table td {
+    text - align: center;
+    vertical - align: middle
+}
+table td: last - child {
+    font - family: Pacifico, cursive;
+    font - size: 3.6 vw;
+    line - height: 1.4;
+    text - align: center;
+    max - width: 15 %
+}
+table td: nth - child(2) {
+    font - size: 3.6 vw;
+    line - height: 1.4;
+    font - family: Pacifico, cursive;
+    min - width: 70 % ;
+    word - wrap: break -word;
+    max - width: 20 px
+}
+table td: nth - child(1) {
+    max - width: 15 %
+}
+table th {
+    background - color: #daeff1;
+    font - weight: 300
+}
+table tr: nth - child(2n) {
+    background - color: #fff
+}
+table tr: nth - child(2n + 1) {
+    background - color: #edf7f8
+}
+@media screen and(max - width: 700 px) {
+    table td: nth - child(3) {
+        font - size: 7.6 vw
+    }
+    table td: nth - child(2) {
+        font - size: 34 px;
+        line - height: 1.4;
+        width: 60 %
+    }
+}.scoreimg {
+    border - radius: 50 % ;
+    height: 60 px;
+    width: 60 px
+}
+#bux {
+    font - size: 40 px;
+    line - height: 58 px;
+    color: #fff;
+    margin: 0 auto;
+    margin - left: auto;
+    height: 50 px;
+    width: 15 px;
+    transition: all .2 s;
+    position: relative;
+    left: -17 px
+}.mflast {
+    height: 58 px;width: 58 px;display: inline - block;transition: all .2 s
+}.mflast: nth - of -type(1) {
+    background: #075e54}.mflast:nth-of-type(2){background:# 3 f4a55
+}.mflast: nth - of -type(3) {
+    background: #3b5998}.mflast:nth-of-type(4){background:# 0084 ff
+}.mflast: hover {
+    background: #fff
+}
+#bux: hover {
+    color: #000}.button-jittery button{animation:jittery 4s infinite}.button-jittery button:hover{animation:heartbeat .2s infinite}@keyframes jittery{5%,50%{transform:scale(1)}10%{transform:scale(.9)}15%{transform:scale(1.15)}20%{transform:scale(1.15) rotate(-5deg)}25%{transform:scale(1.15) rotate(5deg)}30%{transform:scale(1.15) rotate(-3deg)}35%{transform:scale(1.15) rotate(2deg)}40%{transform:scale(1.15) rotate(0)}}@keyframes heartbeat{50%{transform:scale(1.1)}}.button-hand button:before{content:"👇";font-size:60px;transform:scaleX(-1);right:0;top:-68px;animation:up-down 1s infinite}.button-hand button .hands:after,.button-hand button .hands:before{content:"👇";font-size:40px;opacity:0;transition:.4s ease-in-out}.button-hand button .hands:before{transform:rotate(-60deg);left:-45px;top:-10px}.button-hand button .hands:after{transform:rotate(170deg);right:30px;top:50px}.button-hand button:hover .hands:before{opacity:1;left:-35px}.button-hand button:hover .hands:after{opacity:1;top:40px}:after,:before{content:"";position:absolute}@keyframes up-down{50%{margin-top:-20px}}button{background:0 0;color:# fff;border: 3 px solid #fff;border - radius: 50 px;padding: .8 rem 2 rem;font: 24 px Margarine,
+    sans - serif;outline: 0;cursor: pointer;position: relative;letter - spacing: 2 px;transform: scale(.7)
+}
+#fb {
+    background: #3b5998;border:3px solid # 3 b63b8;display: inline - block;transition: .2 s ease - in -out;animation - iteration - count: 1;animation - delay: 2 s
+}
+#messenger {
+    background: #00c6ff;border:3px solid # 37 cefa;display: inline - block;transition: .2 s ease - in -out;animation - iteration - count: 1;animation - delay: 3 s
+}
+#copykrle {
+    background: 0 0
+}
+#copykrle: active {
+    background - color: #fff
+}
+@keyframes slideInFromLeft {
+    0 % {
+        transform: translateY(1 % )
+    }
+    100 % {
+        transform: translateY(0)
+    }
+}
+@keyframes headerawesome {
+    0 % {
+        transform: translateY(100 % )
+    }
+    100 % {
+        transform: translateY(0)
+    }
+}.headingmod {
+    color: #efbb35;text - transform: uppercase;font - size: 150 % ;pading: 2 px 5 px
+}
+body {
+    font - family: Merienda, cursive;
+    background - color: #222831;margin:0;width:100%}@-webkit-keyframes dash{0%{stroke-dashoffset:1000}100%{stroke-dashoffset:0}}@keyframes dash{0%{stroke-dashoffset:1000}100%{stroke-dashoffset:0}}@-webkit-keyframes dash-check{0%{stroke-dashoffset:-100}100%{stroke-dashoffset:900}}@keyframes dash-check{0%{stroke-dashoffset:-100}100%{stroke-dashoffset:900}}.header{box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);position:absolute;width:100%;z-index:3;background-color:# fff
+}
+@keyframes righttoleft {
+    0 % {
+        margin - left: 40 % ;opacity: 0;border - width: 0
+    }
+    40 % {
+        margin - left: 100 % ;opacity: 100
+    }
+    80 % {
+        margin - left: -80 % ;opacity: 100
+    }
+    100 % {
+        margin: 0;opacity: 100;border - width: 5 px
+    }
+}
+@ - webkit - keyframes pulsex {
+    0 % {
+        box - shadow: 0 0 0 0 #ef8f6e
+    }
+}
+@keyframes pulsex {
+    0 % {
+        box - shadow: 0 0 0 0 #ef8f6e
+    }
+}
+header {
+    text - align: center;
+    width: 100 % ;
+    height: auto;
+    background - size: cover;
+    background - attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border - radius: 0 0 85 % 85 % /30%}body{width:100%;height:100%;text-align:center;color:#fff;background-image:#fff;animation:1s ease-out 0s 1 headerawesome;transform:translateY(0)}
