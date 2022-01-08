@@ -1,0 +1,580 @@
+:root {
+  --backgroundColor: #1DD3B0;
+  --colorShadeA: white;
+  --colorShadeB: #68f87e;
+  --colorShadeC: #27333D;
+  --colorShadeD: #2cbc42;
+  --colorShadeE: #273947;
+}
+.textInput {
+    width: 87%;
+    padding: 15px;
+    margin:10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+border: 4px solid #e8a16e;
+    border-radius: 10px;
+    outline: none;
+    }
+.textInput:focus{
+ border: 4px solid #fd6f0a;
+}
+p {
+  margin-bottom: 0;
+  color: #fff;
+  line-height: 25px
+}
+a {
+  text-decoration: none!important
+}
+@keyframes headerawesome {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes changebg {
+  0% {
+    background-position: 0% 80%;
+  }
+  50% {
+background-position: 54% 25%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--colorShadeA);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+button.big-button {
+  padding: 1em 2em;
+  border: 2px solid orange;
+  border-radius: 1em;
+  background: var(--colorShadeE);
+      transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+  box-shadow: 1px 6px #888;
+}
+button.big-button::before {
+  position: absolute;
+  content: "";
+  width:100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  border-radius: inherit;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+button.big-button:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.375em);
+}
+
+button.big-button:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+button.big-button:active {
+  transform: translate(0em, 0.75em);
+}
+
+button.big-button:active::before {
+  transform: translate3d(0, 0, -1em);
+
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
+#yoname{
+  color:#fbcc46;
+}
+#intro{
+  color:#ecacac;
+  font-size:150%;
+  padding:1px;
+  margin-top:0;
+}
+#seeans{
+  color:#f4f4f4;
+  font-size:120%;
+}
+#tix{
+    border: 2px solid #e74848;
+  color:#e74848;
+  display:inline-block;
+  padding:2.5vw;
+    border-radius:20px;
+  font-size:120%;
+  background:#0E0E14;
+}
+#allbuttons{
+background-image: url(../slot.png);
+background-repeat: no-repeat;
+background-position: center center;
+margin: 0 auto;
+height: 439px;
+width: 362px;
+
+}
+.yobuttonwrap{
+  vertical-align: middle;
+display: table-cell;
+}
+.headingmod{
+  color: white;
+   text-transform: uppercase;background:white;
+  padding:20px 5px;
+  transition: all 0.1s ease-in;
+  margin:0;
+background: repeating-linear-gradient(-45deg, #272727, #272727 10px, #373737 0, #373737 20px);
+border-bottom: 8px solid coral;  
+ font-family: 'Quicksand', sans-serif;
+}
+body {
+    font-family: 'Merienda', cursive;
+  margin:0;
+  width:100%;
+}
+a {
+  position: relative;
+  width: 107%;
+  padding-top: 25.92%;
+  display: block;
+  background-size: 100% 100%;
+    font-family: 'luckiest guy';
+  font-size: 26px;
+  text-decoration: none;
+  color: #333;
+  line-height: 27px;
+}
+
+#score{
+margin-right: 2vw;
+color: #97D2F4;
+display: none;
+padding: 12px;
+background: #03031c;
+margin-right: 0;
+border: 4px solid teal;
+    border-right-color: teal;
+border-bottom-left-radius: 13px;
+border-top-left-radius: 13px;
+border-right-color: transparent;
+transition: all 1s ease-in;
+margin-top:10px;
+position:fixed;
+float: right;
+right: 0;
+}
+a.background-button {
+transition: all 0.2s;
+}
+a.background-button:after {
+  content: attr(title);
+  width: 92%;
+  height: 92%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+background: blue;
+clip-path: polygon(0 9%, 99% 0%, 92% 90%, 4% 90%);
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.background-button:hover:after {
+  -webkit-transform: translate(2.5%, 10%);
+  transform: translate(2.5%, 10%);
+  text-shadow: 2px 2px 1px white;
+  color: black;
+}
+.button-wrapper {
+  width: 315px;
+  display: inline-block;
+  margin: 0px;
+}
+#first{
+filter: drop-shadow(16px 10px 0px rgb(248, 173, 2));
+}
+#first:hover{
+    filter: drop-shadow(0px 0px 0px);
+}
+#second{
+  filter: drop-shadow(16px 10px 0px rgb(19, 214, 255));
+}
+#second:hover{
+    filter: drop-shadow(0px 0px 0px);
+}#third{
+  filter: drop-shadow(16px 10px 0px rgb(32, 231, 56));
+}
+#third:hover{
+    filter: drop-shadow(0px 0px 0px);
+}#fourth{
+  filter: drop-shadow(16px 10px 0px rgb(255, 118, 192));
+}
+#fourth:hover{
+    filter: drop-shadow(0px 0px 0px);
+}
+#first:after{
+  background:#FFF100;
+}#second:after{
+  background:#49FFFF;
+}#third:after{
+  background:#14FF83;
+}
+#fourth:after{
+  background:#FFA3B9;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+text-align:center;
+/*background: linear-gradient(66deg, lightcoral, #090a0f, #201c29, #e52e71 );*/
+background: linear-gradient(66deg, #536976, #001628, #3A5F9B);
+background-size: 701% 655%;
+        animation: 1s ease-out 0s 1 headerawesome, changebg 10s infinite;
+        transform: translateY(0%);
+  }
+#changelol {
+height: 130px;
+width: 130px;
+  display:none;
+  margin-top:-14px;
+    border-radius: 50%;
+}
+#tabletop{
+  font-size:123%;
+}
+.theader {
+  background-color: #E43F6F;
+  color: white;
+  font-size: 1.5em;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.table-users {
+  border: 1px solid #327a81;
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  max-width: calc(100% - 2em);
+  margin: 1em auto;
+  overflow: hidden;
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+table td, table th {
+  color: #2b686e;
+  padding: 10px;
+}
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+table td:last-child {
+    font-family: 'Pacifico', cursive;
+  font-size: 3.6vw;
+  line-height: 1.4;
+  text-align: center;
+  max-width:15%;
+}
+table td:nth-child(2) {
+  font-size:3.6vw;
+  line-height: 1.4;
+  font-family: 'Pacifico', cursive;
+  min-width:70%;
+  word-wrap: break-word;
+max-width: 20px;
+}
+table td:nth-child(1) {
+  max-width:15%;
+}
+
+table th {
+  background-color: #daeff1;
+  font-weight: 300;
+}
+table tr:nth-child(2n) {
+  background-color: white;
+}
+table tr:nth-child(2n + 1) {
+  background-color: #edf7f8;
+}
+@media screen and (max-width: 700px) {
+  table td:nth-child(3) {
+  font-size: 7.6vw;
+}
+table td:nth-child(2) {
+    font-size: 34px;
+      line-height: 1.4;
+  width:60%;
+}
+}
+.scoreimg{
+  border-radius: 50%;
+height: 60px;
+width: 60px;
+}
+#naxe{
+      transition: 0.2s ease-in-out;
+    animation-iteration-count: 1;
+    animation: heartbeat 2s;
+    animation-delay: 1s;
+}
+#submix{
+      animation-iteration-count: 1;
+    animation: heartbeat 2s;
+    animation-delay: 2s;
+}
+@keyframes heartbeat {
+  50% {
+    transform: scale(1.1);
+  }
+}
+.progress {
+  height: 30px;
+  width: 0%;
+  background: linear-gradient(to left, #f2709c,#ff9472);
+  color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 3px -5px #f2709c, 0 2px 5px #f2709c;
+  transition: 1s ease;
+   border-radius: 20px;
+     height: 30px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+ .emoji {
+     width: 120px;
+     height: 120px;
+     margin: 15px 15px 40px;
+     background: #ffda6a;
+     display: inline-block;
+     border-radius: 50%;
+     position: relative;
+}
+ .emoji:after {
+     position: absolute;
+     bottom: -40px;
+     font-size: 18px;
+     width: 60px;
+     left: calc(50% - 30px);
+     color: #8a8a8a;
+}
+ .emoji__face, .emoji__eyebrows, .emoji__eyes, .emoji__mouth, .emoji__heart {
+     position: absolute;
+}
+ .emoji__face:before, .emoji__eyebrows:before, .emoji__eyes:before, .emoji__mouth:before, .emoji__heart:before, .emoji__face:after, .emoji__eyebrows:after, .emoji__eyes:after, .emoji__mouth:after, .emoji__heart:after {
+     position: absolute;
+     content: '';
+}
+ .emoji__face {
+     width: inherit;
+     height: inherit;
+}
+ .emoji--love {
+     background: #f55064;
+}
+
+ .emoji--love .emoji__heart {
+     left: calc(50% - 40px);
+     top: calc(50% - 40px);
+     width: 80px;
+     height: 80px;
+     animation: heart-beat 1s linear infinite alternate;
+}
+ .emoji--love .emoji__heart:before, .emoji--love .emoji__heart:after {
+     left: calc(50% - 20px);
+     top: calc(50% - 32px);
+     width: 40px;
+     height: 64px;
+     background: #fff;
+     border-radius: 20px 20px 0 0;
+}
+ .emoji--love .emoji__heart:before {
+     transform: translate(20px) rotate(-45deg);
+     transform-origin: 0 100%;
+}
+ .emoji--love .emoji__heart:after {
+     transform: translate(-20px) rotate(45deg);
+     transform-origin: 100% 100%;
+}
+
+ .emoji--sad .emoji__face {
+     animation: sad-face 2s ease-in infinite;
+}
+ .emoji--sad .emoji__eyebrows {
+     left: calc(50% - 3px);
+     top: 35px;
+     height: 6px;
+     width: 6px;
+     border-radius: 50%;
+     background: transparent;
+     box-shadow: -40px 9px 0 0 #000, -25px 0 0 0 #000, 25px 0 0 0 #000, 40px 9px 0 0 #000;
+}
+ .emoji--sad .emoji__eyebrows:before, .emoji--sad .emoji__eyebrows:after {
+     width: 30px;
+     height: 20px;
+     border: 6px solid #000;
+     box-sizing: border-box;
+     border-radius: 50%;
+     border-bottom-color: transparent;
+     border-left-color: transparent;
+     border-right-color: transparent;
+     top: 2px;
+     left: calc(50% - 15px);
+}
+ .emoji--sad .emoji__eyebrows:before {
+     margin-left: -30px;
+     transform: rotate(-30deg);
+}
+ .emoji--sad .emoji__eyebrows:after {
+     margin-left: 30px;
+     transform: rotate(30deg);
+}
+ .emoji--sad .emoji__eyes {
+     width: 14px;
+     height: 16px;
+     left: calc(50% - 7px);
+     top: 50px;
+     border-radius: 50%;
+     background: transparent;
+     box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+ .emoji--sad .emoji__eyes:after {
+     background: #548dff;
+     width: 12px;
+     height: 12px;
+     margin-left: 6px;
+     border-radius: 0 100% 40% 50Array/0Array 50% 40% 100%;
+     transform-origin: 0% 0%;
+     animation: tear-drop 2s ease-in infinite;
+}
+ .emoji--sad .emoji__mouth {
+     width: 60px;
+     height: 80px;
+     left: calc(50% - 30px);
+     top: 80px;
+     box-sizing: border-box;
+     border: 6px solid #000;
+     border-radius: 50%;
+     border-bottom-color: transparent;
+     border-left-color: transparent;
+     border-right-color: transparent;
+     background: transparent;
+     animation: sad-mouth 2s ease-in infinite;
+}
+ .emoji--sad .emoji__mouth:after {
+     width: 6px;
+     height: 6px;
+     background: transparent;
+     border-radius: 50%;
+     top: 4px;
+     left: calc(50% - 3px);
+     box-shadow: -18px 0 0 0 #000, 18px 0 0 0 #000;
+}
+ @keyframes heart-beat {
+     25% {
+         transform: scale(1.1);
+    }
+     75% {
+         transform: scale(0.6);
+    }
+}
+ @keyframes sad-face {
+     25%, 35% {
+         top: -15px;
+    }
+     55%, 95% {
+         top: 10px;
+    }
+     100%, 0% {
+         top: 0;
+    }
+}
+ @keyframes sad-mouth {
+     25%, 35% {
+         transform: scale(0.85);
+         top: 70px;
+    }
+     55%, 100%, 0% {
+         transform: scale(1);
+         top: 80px;
+    }
+}
+ @keyframes tear-drop {
+     0%, 100% {
+         display: block;
+         left: 35px;
+         top: 15px;
+         transform: rotate(45deg) scale(0);
+    }
+     25% {
+         display: block;
+         left: 35px;
+         transform: rotate(45deg) scale(2);
+    }
+     49.9% {
+         display: block;
+         left: 35px;
+         top: 65px;
+         transform: rotate(45deg) scale(0);
+    }
+     50% {
+         display: block;
+         left: -35px;
+         top: 15px;
+         transform: rotate(45deg) scale(0);
+    }
+     75% {
+         display: block;
+         left: -35px;
+         transform: rotate(45deg) scale(2);
+    }
+     99.9% {
+         display: block;
+         left: -35px;
+         top: 65px;
+         transform: rotate(45deg) scale(0);
+    }
+}
+#love{
+  display:none;
+  scale:3;
+}
+#wrong{
+  display:none;
+  scale:3;
+}
