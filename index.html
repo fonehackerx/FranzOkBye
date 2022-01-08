@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<?php
+ if(isset($_COOKIE["uzerid"])){
+    $checkb64=$_COOKIE["uzerid"];
+    echo "Cookie fuckin' exists";
+      $genurl="/generateme.php";
+       header( "Location: {$genurl}", true, 303 );
+    //REDIRECT TO GENERATED LINK OF COOKIEEEEEEEEE
+    die();
+  }
+  ?>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"> 
+           <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@800&display=swap" rel="stylesheet"> 
+     <title>Create Your Lockdown Quiz!</title>
+     <meta name="theme-color" content="#ffe9c1" />
+     <meta name="msapplication-navbutton-color" content="#ffe9c1">
+<meta name="apple-mobile-web-app-status-bar-style" content="#ffe9c1">
+     <meta name="description" content="See who has been your true friend in this lockdown. Create your personalized quiz and send it to your friends!">
+     <meta property="og:title" content="Lockdown Quiz Creater For Friends!" />
+     <meta property="twitter:url" content="https://lockdownbud.xyz/" />
+     <meta property="og:image" content="https://ticktick.me/questionpic.png" />
+<meta name="twitter:card" content="photo" />
+     <meta name="twitter:image" content="https://ticktick.me/questionpic.png" />
+<meta name="twitter:title" content="Lockdown Quiz Creater For Friends!" />
+      <link rel="stylesheet" href="assets/css/ques.css">
+  </head>
+  <body>
+  <div class="overlay">
+        <div  id="progr" class="progress"></div>
+                  <h1 id="que" style="display:none" class="headingmod"></h1>
+    <div id="introx">
+      <div id=wrapup>
+        <div id=wrapagain>
+              <h1 id="hm"><span style="color:#530b41">Hey!</span> 📣 Create Your Own Quiz ❓</h1>
+              <p id="tix">And see who was with you in lockdown! 👀</p>
+            </div>
+          </div>
+          <input style="display:none" type="text" style="margin-top:20px" id="naxe" class="textInput smallFont" maxlength="12" name="userName" placeholder="Enter your first name here.." autocomplete="off" required="">            
+<button style="display:none" onclick="precheck()" id="submix" class="big-button">SUBMIT & SHARE WITH FRIENDS!</button>
+              <br>
+              <p id="emojis" style="display:none">🏆🏅🎗</p>
+                                            <a class="button" id="begin">CREATE YOUR QUIZ NOW!! 🤟</a>
+              <div id="how2play">  <h1 class="ribbon">How To Play</h1>
+                <br>
+                <ul style="list-style-type:none;text-align:left;margin:0;padding:0">
+                <li>1. Click on the green button 💚 above 👆👆.
+                <li>2. Answer some questions about you.
+                <li>3. Share the link 🔗 with your friends!
+                <li>4. See your friends' score.
+              </ul>
+              <br>
+              </div>
+              <img id="lowimg" src="questionpic.png"/>
+              <br>
+                            </div>
+<div id="score">Question:<span id="livescore">0</span>/7</div>
+<img id="changelol" width="100vw" src="0.png"/>
+<br>
+<div id="doneit" style="display:none">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+  <circle id="cx" class="path circle" fill="none" stroke="#FF6861" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+  <polyline class="path check" fill="none" stroke="#FF6861" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+</svg>
+</div>
+<div id="allbuttons">
+  <div class="yobuttonwrap">
+<div class="button-wrapper">
+  <a class="background-button" id="first" href="#" title="Instargam"></a>
+</div>
+<div class="button-wrapper">
+  <a class="background-button" id="second" href="#" title="Snapchat"></a>
+</div>
+<div class="button-wrapper">
+  <a class="background-button" id="third" href="#" title="Facebook"></a>
+</div>
+<div class="button-wrapper">
+  <a class="background-button" id="fourth" href="#" title="Twitter"></a>
+</div>
+</div>
+</div>
+
+  <br>
+          </div>
+        </header>
+    <script src="assets/js/questions.js"></script>
+    <style>
+  input#image-button{
+    background: #ccc url('bluelogo.png') no-repeat top left;
+    padding-left: 16px;
+    height: 16px;
+}
+</style>
+<div id="hidden_form_container" style="display:none;"></div>
+  </body>
+</html>
